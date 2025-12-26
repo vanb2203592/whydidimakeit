@@ -1,7 +1,12 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const Input = ({value, onChange}) => {
+const Input = ({
+  value,
+  onChange,
+}: {
+  value: string;
+  onChange: (value: string) => void;
+}) => {
   return (
     <StyledWrapper>
       <div className="brutalist-container">
@@ -36,7 +41,7 @@ const StyledWrapper = styled.div`
     border-radius: 0;
     outline: none;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 5px 5px 0 #000, 10px 10px 0 #4a90e2;
+    box-shadow: 5px 5px 0 #000, 10px 10px 0 #fb71a2;
   }
 
   @keyframes glitch {
@@ -141,7 +146,7 @@ const StyledWrapper = styled.div`
 
   .brutalist-input:focus + .brutalist-label {
     transform: rotate(0deg) scale(1.05);
-    background-color: #4a90e2;
+    background-color: #fb71a2;
   }
 
   .smooth-type {
@@ -195,7 +200,7 @@ const StyledWrapper = styled.div`
       border-color: #000;
     }
     50% {
-      border-color: #4a90e2;
+      border-color: #fb71a2;
     }
   }`;
 
