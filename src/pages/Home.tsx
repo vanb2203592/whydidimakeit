@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Input from "../components/Input";
 import { Button } from "../components/ui/button";
-import { ArrowUpIcon, GhostIcon } from "lucide-react";
 import { toast } from "sonner";
 
 export const Home = () => {
